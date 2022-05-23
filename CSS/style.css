@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #131518;
+    color: white;
+    font-family: "Overpass", sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #262e38;
+    height: 45rem;
+    width: 45rem;
+    padding: 4rem;
+    border-radius: 11px;
+}
+
+/* RATING */
+
+.icon {
+    height: 1.7rem;
+    width: 1.6rem;
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: #515860;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    margin-bottom: 3rem;
+    color: #969fad;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    unicode-bidi: bidi-override;
+    text-align: center;
+    position: relative;
+}
+
+.input-rating-1,
+.input-rating-2,
+.input-rating-3,
+.input-rating-4,
+.input-rating-5 {
+    display: none;
+}
+
+.checkbox {
+    width: 5rem;
+    height: 5rem;
+    background-color: #515860;
+    padding: 2rem;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit {
+    width: 100%;
+    background-color: #fc7614;
+    border: none;
+    border-radius: 100px;
+    padding: 2rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: .5rem;
+    font-weight: 700;
+    transition: all .3s ease;
+}
+
+.submit:hover {
+    color: #fc7614;
+    background-color: white;
+}
+
+/* THANK YOU */
+
+.container-thankyou {
+    display: none;
+    text-align: center;
+}
+
+.result-div {
+    color: #fc7614;
+    background-color: #515860;
+    font-size: 1.5rem;
+    width: 20rem;
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+}
