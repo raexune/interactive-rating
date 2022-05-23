@@ -18,6 +18,8 @@ body {
 .wrapper {
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
 }
@@ -120,4 +122,8 @@ p {
     margin: 4rem auto;
     padding: 1rem 2rem;
     border-radius: 100px;
+}
+
+.warning {
+    height: 4rem;
 }

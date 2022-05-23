@@ -3,11 +3,18 @@
 const submit = document.querySelector(".submit");
 const rating = document.querySelector(".container-rating");
 const thankYou = document.querySelector(".container-thankyou");
+const warning = document.querySelector(".warning");
 
 
 submit.addEventListener("click", () => {
-    rating.style.display = "none";
-    thankYou.style.display = "block";
+    if (input1.attributes[3].value === "checked" || input2.attributes[3].value === "checked" || input3.attributes[3].value === "checked" || input4.attributes[3].value === "checked" || input5.attributes[3].value === "checked") {
+        rating.style.display = "none";
+        thankYou.style.display = "block";
+    } else {
+        warning.innerHTML = "Please choose between 1 and 5";
+        console.log("not valid");
+    }
+
 });
 
 //Check and uncheck checkboxes
@@ -19,6 +26,7 @@ const label1 = document.querySelector(".checkbox-1");
 
 
 label1.addEventListener("click", () => {
+    warning.innerHTML = "";
     if (input1.attributes[3].value === "unchecked") {
         input1.setAttribute("unchecked", "checked");
         label1.style.backgroundColor = "#fc7614";
@@ -37,6 +45,7 @@ const label2 = document.querySelector(".checkbox-2");
 
 
 label2.addEventListener("click", () => {
+    warning.innerHTML = "";
     if (input2.attributes[3].value === "unchecked") {
         input2.setAttribute("unchecked", "checked");
         label2.style.backgroundColor = "#fc7614";
@@ -55,6 +64,7 @@ const label3 = document.querySelector(".checkbox-3");
 
 
 label3.addEventListener("click", () => {
+    warning.innerHTML = "";
     if (input3.attributes[3].value === "unchecked") {
         input3.setAttribute("unchecked", "checked");
         label3.style.backgroundColor = "#fc7614";
@@ -73,6 +83,7 @@ const label4 = document.querySelector(".checkbox-4");
 
 
 label4.addEventListener("click", () => {
+    warning.innerHTML = "";
     if (input4.attributes[3].value === "unchecked") {
         input4.setAttribute("unchecked", "checked");
         label4.style.backgroundColor = "#fc7614";
@@ -91,6 +102,7 @@ const label5 = document.querySelector(".checkbox-5");
 
 
 label5.addEventListener("click", () => {
+    warning.innerHTML = "";
     if (input5.attributes[3].value === "unchecked") {
         input5.setAttribute("unchecked", "checked");
         label5.style.backgroundColor = "#fc7614";
